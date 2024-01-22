@@ -6,22 +6,37 @@
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form">
-  <h1>Register</h1>
-  <form action="/register" method="post">
-    <div class="input-group">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+        <form class="login-form" action="/register" method="post">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            
+            <div class="input-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="input-group">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="input-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          
+            <button type="submit">Register</button>  
+        </form>
     </div>
-    <div class="input-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="input-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Register</button>
-  </form>
 </body>
 </html>
